@@ -1,0 +1,150 @@
+.contenedor {
+    width: 85%;
+    margin: 0 auto;
+}
+
+.divisiones {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.cartel {
+    width: 30%;
+    margin: 0 auto;
+    padding: 10px;
+    box-sizing: border-box;
+    float: left;
+}
+
+.cartel img {
+    width: 100%;
+    height: auto;
+    border: 5px solid grey;
+}
+
+.centro {
+    width: 100%;
+    margin: 0 auto;
+    padding: 5px;
+    box-sizing: border-box;
+}
+
+.descripcion {
+    width: 70%;
+    margin: 0 auto;
+    float: left;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.precio {
+    width: 30%;
+    padding: 5px;
+    font-family: Alfa Slab One;
+    font-size: 18px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.titulo {
+    width: 40%;
+    padding: 10px;
+    text-align: center;
+    font-family: Alfa Slab One;
+    font-size: 25px;
+}
+
+.apartados {
+    width: 100%;
+    padding: 15px;
+    box-sizing: border-box;
+    font-family: arial;
+    font-size: 18px;
+}
+
+.header {
+    float: left;
+    display: flex;
+    align-items: center;
+    width: 100%
+}
+
+.header input {
+    width: 30%
+}
+
+header {
+    display: inline-block;
+}
+
+@media screen and (max-width: 600px) {
+    .navegacion ul li {
+        float: none;
+        width: 100%;
+    }
+}
+
+.navegacion {
+    width: 100%;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.navegacion ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #0066ff;
+}
+
+.navegacion li {
+    box-sizing: border-box;
+    width: 25%;
+    float: left;
+    border: 2px solid #bbb;
+}
+
+.navegacion li:last-child {
+    border-right: none;
+}
+
+.navegacion li a {
+    display: block;
+    color: white;
+    text-align: center;
+    text-decoration: #0066ff;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 20px;
+}
+
+.navegacion li a:hover:not(.active) {
+    background-color: #0400ff;
+}
+
+.navegacion .active {
+    background-color: #ffffff;
+    color: #0066ff;
+}
+
+footer {
+    background-color: rgb(51, 51, 51);
+    text-align: center;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 50px;
+    color: white;
+}
+
+html {
+    position: relative;
+}
+
+body {
+    margin: 0;
+    margin-bottom: 30%;
+}

@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+
+{% block title %}
+    {{ title }}
+{% endblock%}
+
+{% block content %}
+    <div class="menu">
+        <div class="fila">
+            {% for item in movies %}
+                <form action="{{url_for('detalle') }}" method="post" novalidate>
+                    <div class="poster">
+                        <input name="id" type="hidden" value="{{item.id}}">
+                        <input class = "imagen" type = "image" src=  {{url_for('static', filename = item['poster']) }} alt= "{{item.titulo}}" title="{{item.titulo}}">
+                        <div class="titulopelicula">{{ item.titulo }}</div>
+                    </div>
+                </form>
+            {% endfor %}
+        </div>
+    </div>
+{% endblock %}

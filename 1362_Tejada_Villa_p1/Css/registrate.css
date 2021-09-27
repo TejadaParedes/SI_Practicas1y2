@@ -1,0 +1,91 @@
+.contenedor{
+	width:85%;
+	margin:0 auto;
+  padding: 20px;
+}
+
+.registro{
+  width:50%;
+	margin:0 auto;
+  padding: 20px;
+  box-sizing: border-box;
+  float: left;
+}
+
+.autentificacion{
+  width:50%;
+	margin:0 auto;
+  padding: 20px;
+  box-sizing: border-box;
+  float: left;
+}
+
+.fila{
+  width:90%;
+	margin:20px;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.titulo{
+	width: 30%;
+	padding: 10px;
+	text-align: center;
+	font-family: Alfa Slab One;
+	font-size: 25px;
+}
+
+.columnalabel{
+  float: left;
+  width: 25%;
+  padding: 5px;
+  box-sizing: border-box;
+}
+
+.columnainput{
+  float: left;
+  width: 75%;
+  padding: 5px;
+  box-sizing: border-box;
+}
+
+.boton{
+  width: 97%;
+  padding: 10px;
+}
+
+.columnainput input[type=text]{
+  width: 70%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.boton input[type=submit]{
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  cursor: pointer;
+  border: none;
+  color: white;
+  background-color: #0066ff;
+}
+
+.columnalabel label{
+  /**display: inline-block;*/
+  font-family: arial;
+  padding: 12px 12px 12px 0;
+  font-size: 18px;
+}
+
+@media screen and (max-width: 1710px) {
+  .columnainput{
+    width: 100%;
+    float: none;
+  }
+  .columnalabel{
+    width: 100%;
+    float: none;
+  }
+}

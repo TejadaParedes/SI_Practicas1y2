@@ -1,0 +1,115 @@
+{% extends "base.html" %}
+
+{% block title %}
+    {{ title }}
+{% endblock%}
+
+{% block content %}
+    <!--<h1>Sign In</h1>
+    <form action="" method="post" novalidate>
+        <label><b>Username</b></label>
+        <input name="username" type="text" placeholder="Enter username">
+        <label><b>Password</b></label>
+        <input name="password" type="password" placeholder="Enter password">
+        <input type="submit" value="Login">
+    </form>-->
+
+
+    <div class="menu">
+        <div class="registro">
+            <div class="titulo">Registrate</div>
+            <form action="{{url_for('register')}}" method="post" onsubmit="return verifyRegister();" id = "registro">
+                <div class="fila">
+                    <div class="columnalabel">
+                        <label>
+                        Nombre de usuario:
+                        </label>
+                    </div>
+                    <div class="columnainput">
+                        <input type="text" id="usernamer" name="username" placeholder="Introduzca su nombre de usuario" >
+                    </div>
+                </div>
+                <div class="fila">
+                    <div class="columnalabel">
+                        <label>Contraseña:</label>
+                    </div>
+                    <div class="columnainput">
+                        <input type="password" id="passr" name="passr" placeholder="Introduzca su contraseña" >
+                    </div>
+                    <span id="result"></span>
+                </div>
+                <div class="fila">
+                    <div class="columnalabel">
+                        <label>Repita su contraseña:</label>
+                    </div>
+                    <div class="columnainput">
+                        <input type="password" id="repassr" name="repass" placeholder="Introduzca su contraseña otra vez" >
+                    </div>
+                </div>
+                <div class="fila">
+                    <div class="columnalabel">
+                        <label>E-mail:</label>
+                    </div>
+                    <div class="columnainput">
+                        <input type="email" id="emailr" name="email" placeholder="Introduzca su e-mail">
+                    </div>
+                </div>
+                <div class="fila">
+                    <div class="columnalabel">
+                        <label>Tarjeta de crédito:</label>
+                    </div>
+                    <div class="columnainput">
+                        <input type="text" id="tarjetar" name="tarjeta" placeholder="Introduzca su múmero de tarjeta">
+                    </div>
+                </div>
+                <div class="fila">
+                    <div class="boton">
+                        <input type="submit" value="Registrarse" >
+                    </div>
+                </div>
+            </form>
+        </div>
+        <div class="registro">
+            <div class="titulo">Iniciar sesión</div>
+            <form action="" value="login" method="post" >
+                <div class="fila">
+                    <div class="columnalabel">
+                        <label>
+                        Nick:
+                        </label>
+                    </div>
+                    <div class="columnainput">
+                        <input type="text" name="username" placeholder="Introduzca su nick" required
+                        {% if lastuser %}
+                        value={{lastuser}}
+                        {% endif %}
+                        >
+                    </div>
+                </div>
+                <div class="fila">
+                    <div class="columnalabel">
+                        <label>Contraseña:</label>
+                    </div>
+                    <div class="columnainput">
+                        <input type="password" name="pass" placeholder="Introduzca su contraseña" required>
+                    </div>
+                </div>
+                <div class="fila">
+                    <div class="boton">
+                        <input type="submit" value="Login">
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+{% if existUser == true %}
+<script>
+    alert("Este nombre de usuario no está disponible");
+</script>
+{% endif %}
+{% if invalidlogin == true %}
+<script>
+    alert("Usuario o contraseña incorrectos");
+</script>
+{% endif %}
+{% endblock %}

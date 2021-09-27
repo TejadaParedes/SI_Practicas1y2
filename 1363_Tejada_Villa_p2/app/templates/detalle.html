@@ -1,0 +1,52 @@
+{% extends "base.html" %}
+
+{% block title %}
+    {% if not movie %}
+        Not found error
+    {% else %}
+    {{movie.titulo}}{{ title }}
+    {% endif %} 
+{% endblock%}
+
+{% block content %}
+
+    {% if not movie %}
+        <div class="divisiones">
+            <div class="mensaje_error">La pagina que solicita no existe</div>
+        </div>
+    {% else %}
+        <div class="divisiones ">
+            <div class="titulo ">{{ movie.titulo }}</div>
+            <div class="centro ">
+                <div class="cartel ">
+                    <img src = {{url_for('static', filename = movie['poster']) }} alt = "{{ movie.titulo }}" title="{{movie.titulo}}">
+                </div>
+                <div class="descripcion ">
+                    <div class="apartados ">Año: {{ movie.año }}</div>
+                    <div class="apartados ">Director: {{ movie.director }}</div>
+                    <div class="apartados ">Género: {{ movie.categoria }}</div>
+                    {% if movie.actores|length !=0 %}
+                    <div class="apartados ">Reparto: 
+                        {% for actor in movie.actores %}                    
+                            {% if loop.index == movie.actores|length %}  
+                                {{actor.nombre}} interpretando a {{actor.personaje}}.
+                            {% else %}
+                                {{actor.nombre}} interpretando a {{actor.personaje}} |
+                            {% endif %}
+                        {% endfor %}
+                    </div>
+                    {% endif %}
+                    <div class="apartados ">Duración (minutos): {{ movie.duracion }}</div>
+                    <div class="apartados ">Sinopsis: {{ movie.sinopsis }}</div>
+                </div>
+            </div>
+            <div class="precio">
+                {{ movie.precio }}€
+                <form action="{{url_for('add2cart') }}" method="post" novalidate>
+                    <input name="id" type="hidden" value="{{movie.id}}">
+                    <input type = "image" src=  {{url_for('static', filename = "Imagenes/addcart.png") }} alt= "Carrito" title="Carrito">
+                </form>
+            </div>
+        </div>
+    {% endif %}
+{% endblock %}

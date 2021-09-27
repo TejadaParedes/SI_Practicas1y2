@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{% block title %} {% endblock %}- TuPeliculON</title>
+    <!-- Uso de url_for para obtener la ruta de elementos de la página -->
+    <link rel="stylesheet" type="text/css" href={{ url_for('static', filename='misestilos.css') }}/>
+    <link href='https://fonts.googleapis.com/css?family=Alfa%20Slab%20One' rel='stylesheet'>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script type="text/javascript" src={{ url_for('static', filename='functions.js') }}></script>
+    
+    <script>
+        var urlindex = "{{url_for('rand')}}";
+    </script>
+</head>
+<body onload="callrand(url = urlindex)">
+    <div class="contenedor">
+            <header>
+                <div class="header">
+                    <div class="logo">
+                        <a href={{url_for('index')}}>
+                        <img src= {{url_for('static', filename = "Imagenes/tupeliculon.jpg") }} title="Inicio">
+                        </a>
+                    </div>
+                    <form action="{{url_for('busqueda') }}" class="formulario" method="post" novalidate>
+                        <div class="barra_busqueda">
+                            <input type="text" name="buscar" placeholder="Buscar...">
+                        </div>
+                        <select name="filtro">
+                            <option selected value="0"> Elige una opción </option>
+                            <option value="Animación">Animación</option> 
+                            <option value="Comedia">Comedia</option> 
+                            <option value="Ciencia ficción">Ciencia ficción</option>
+                            <option value="Romance">Romance</option> 
+                            <option value="Drama">Drama</option> 
+                            <option value="Terror">Terror</option> 
+                        </select>
+                        
+                        <div class="boton_busqueda">
+                                <input type="submit" value="Buscar">
+                        </div>
+
+                    </form>
+
+                    <a href="{{ url_for('carrito') }}">
+                            <img src={{url_for('static', filename = "Imagenes/cart.png") }} alt="Carrito" title="Carrito">
+                    </a>
+
+                    <div class="referencias"> 
+                            {% if not session['usuario'] %}
+                            <a href="{{ url_for('login') }}">Sign In</a></div>
+                            {% else %}
+                            <a href="{{ url_for('logout') }}">Log out</a></div>
+                            <span>¡Bienvenido, {{ session['usuario'] }}!</span>
+                            {% endif%}
+                    </div>
+                    <!--<button>Buscar</button> &nbsp;&nbsp;
+                    <button onclick="window.location='registrate.html'">Registrarse</button>
+                    <button>Login</button>-->    
+                </div>
+            </header>
+            <nav>
+                <div class="navegacion">
+                    <ul>
+                        <!--Meter de alguna manera un hidden para activar los colores de nuestra barra dependiendo de donde estemos-->
+                        <li><a class="navegacion active" href="{{ url_for('index') }}">Inicio</a></li>
+                        <li><a href="{{ url_for('historial') }}">Historial</a></li>
+                        <li><a href="#">Peliculas</a></li>
+                        <li><a href="#">Contactenos</a></li>
+                    </ul>
+                </div>
+            </nav>
+    </div>
+    <!--<div>VideoClub:
+        <a href="{{ url_for('index') }}">Home</a>
+        {% if not session['usuario'] %}
+        <a href="{{ url_for('login') }}">Sign In</a></div>
+        <span>Usuario: An&oacutenimo</span>
+        {% else %}
+        <a href="{{ url_for('logout') }}">Log out</a></div>
+        <span>Usuario: {{ session['usuario'] }}</span>
+        {% endif%}
+    </div>-->
+
+    <!--Ver-->
+    <footer>
+        TuPeliculON &copy; <br><label for="onlinecont">Usuarios conectados:</label> <input type="text" readonly id="onlinecont">
+    </footer>
+
+    {% block content%} {% endblock %}
+</body>
+</html>

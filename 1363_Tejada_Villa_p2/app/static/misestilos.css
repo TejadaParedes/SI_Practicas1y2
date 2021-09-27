@@ -1,0 +1,508 @@
+.header {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.header input {
+    width: 30%
+}
+/*---Etiqueta header---*/
+header {
+    width: 100%;
+    box-sizing: border-box;
+}
+/*---------------------*/
+
+nav{
+    background-color: gold;
+    box-sizing: border-box;
+}
+
+.logo{
+    width: 30%;
+    box-sizing: border-box;
+    float: left;
+}
+
+.logo img{
+    width: 100%;
+}
+.formulario{
+    align-items: center;
+    display: flex;
+    box-sizing: border-box;
+    width: 45%;
+}
+select{
+    margin-left: 10px;
+}
+.barra_busqueda{
+    width: 60%;
+    box-sizing: border-box;
+    margin-left: 10px;
+}
+
+.barra_busqueda input[type=text] {
+    width: 94%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+}
+
+.boton_busqueda{
+    width: 15%;
+    box-sizing: border-box;
+    float: left;
+    margin-left: 10px;
+}
+
+.boton_busqueda input[type=submit] {
+    width: 100%;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    cursor: pointer;
+    border: none;
+}
+
+.referencias{
+    width: 7.5%;
+    margin-left: 10px;
+}
+
+.contenedor {
+    width: 90%;
+    box-sizing: border-box;
+    margin: 0 auto;
+}
+
+.menu {
+    width: 96%;
+    margin: 0 auto;
+    padding: 20px;
+    box-sizing: border-box;
+    display: inline-block;
+}
+
+.fila {
+    width: 100%;
+    margin: 0 auto;
+    padding: 20px;
+    box-sizing: border-box;
+    display: inline-block;
+    align-content : flex-start;
+    flex-wrap: wrap
+}
+
+.titulo {
+    font-family: "Alfa Slab One";
+    font-size: 25px;
+    letter-spacing: 1px;
+}
+
+.poster {
+    width: 20%;
+    padding: 20px;
+    box-sizing: border-box;
+    float: left;
+}
+
+.titulopelicula {
+    margin: 0 auto;
+    text-align: center;
+    font-family: arial;
+    font-size: 18px;
+    padding: 10px;
+    height: 10px;
+}
+
+@media screen and (max-width: 1710px) {
+    .menu {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .navegacion ul li {
+        float: none;
+        width: 100%;
+        border-right: none;
+        border-bottom: 5px solid #bbb;
+    }
+    .navegacion li:last-child {
+        border-bottom: none;
+    }
+}
+
+.navegacion {
+    width: 100%;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/*Entender todos los atributos puestos*/
+.navegacion ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow: hidden;
+    background-color: #0066ff;
+    border: 5px solid #bbb;
+}
+
+.navegacion li {
+    box-sizing: border-box;
+    width: 25%;
+    float: left;
+    border-right: 5px solid #bbb;
+}
+/*Hace que el ultimo no tenga borde derecho*/
+.navegacion li:last-child {
+    border-right: none;
+}
+
+.navegacion li a {
+    display: block;
+    color: white;
+    text-align: center;
+    text-decoration: #0066ff;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 20px;
+}
+
+.navegacion li a:hover:not(.active) {
+    background-color: #0400ff;
+}
+
+.navegacion .active {
+    background-color: #ffffff;
+    color: #0066ff;
+}
+
+footer {
+    background-color: rgb(51, 51, 51);
+    text-align: center;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 50px;
+    color: white;
+}
+html {
+    min-height: 100%;
+    position: relative;
+  }
+body {
+    margin: 0;
+    margin-bottom: 40px;
+}
+
+html {
+    position: relative;
+}
+
+
+
+.apartados {
+    width: 100%;
+    padding: 15px;
+    box-sizing: border-box;
+    font-family: arial;
+    font-size: 18px;
+}
+
+.precio {
+    width: 30%;
+    padding: 5px;
+    font-family: "Alfa Slab One";
+    font-size: 18px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.descripcion {
+    width: 70%;
+    margin: 0 auto;
+    float: left;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.centro {
+    width: 100%;
+    margin: 0 auto;
+    padding: 5px;
+    box-sizing: border-box;
+    display: inline-block;
+}
+
+.tituloDetalle {
+    width: 40%;
+    padding: 10px;
+    text-align: center;
+    font-family: "Alfa Slab One";
+    font-size: 25px;
+}
+
+.cartel {
+    width: 30%;
+    margin: 0 auto;
+    padding: 10px;
+    box-sizing: border-box;
+    float: left;
+}
+
+.cartel img {
+    width: 100%;
+    height: auto;
+    border: 5px solid grey;
+}
+
+.divisiones {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.tabla {
+    padding: 20px;
+    width: 70%;
+    margin: 0 auto;
+    overflow-x: auto;
+}
+
+.tabla table {
+    margin: 0 auto;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+.tabla th,
+td {
+    padding: 8px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+    font-family: arial;
+}
+
+.titulocarrito {
+    width: 30%;
+    padding: 10px;
+    text-align: center;
+    font-family: "Alfa Slab One";
+    font-size: 25px;
+}
+
+.registro {
+    width: 50%;
+    margin: 0 auto;
+    padding: 20px;
+    box-sizing: border-box;
+    float: left;
+}
+
+.imagen{
+    margin: 0 auto;
+    border: 5px solid grey;
+    width: 100%;
+  }
+
+.columnalabel {
+    float: left;
+    width: 25%;
+    padding: 5px;
+    box-sizing: border-box;
+}
+
+.columnainput {
+    float: left;
+    width: 75%;
+    padding: 5px;
+    box-sizing: border-box;
+}
+
+.boton {
+    width: 97%;
+    padding: 10px;
+}
+
+.columnainput input[type=text] {
+    width: 97%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.columnainput input[type=password] {
+    width: 97%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.columnainput input[type=email] {
+    width: 97%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.boton input[type=submit] {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    cursor: pointer;
+    border: none;
+    color: white;
+    background-color: #0066ff;
+}
+
+.columnalabel label {
+
+    font-family: arial;
+    padding: 12px 12px 12px 0;
+    font-size: 18px;
+}
+
+@media screen and (max-width: 1710px) {
+    .columnainput {
+        width: 100%;
+        float: none;
+    }
+    .columnalabel {
+        width: 100%;
+        float: none;
+    }
+}
+
+
+.mensaje_error{
+    font-family: arial;
+    font-size: 20px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.icono_carrito{
+    width: 20%;
+}
+
+.delitem{
+    width: 30%;
+}
+
+.pietabla {
+    width: 80%;
+    padding: 10px;
+    text-align: left;
+    margin-left: 10%;
+    font-family: "Alfa Slab One";
+    font-size: 25px;
+}
+.pietabla button{
+    margin-right: 10%;
+}
+.carritovacio{
+    font-family: "Alfa Slab One";
+    margin-left: 12%;    
+}
+.historialvacio{
+    font-family: "Alfa Slab One";
+    margin-left: 12%;    
+}
+.piehistorial {
+    width: 80%;
+    padding: 10px;
+    text-align: left;
+    margin-left: 10%;
+    font-family: "Alfa Slab One";
+    font-size: 25px;
+}
+#onlinecont{
+    color:white;
+    width: 16px;
+    border: none;
+    background-color: rgb(51, 51, 51);
+}
+
+.imagendel{
+    margin: 0 auto;
+    width: 100%;
+  }
+
+#registro .no_permitida{
+    font-weight:bold;
+    color:#FF0000;
+    font-size:larger;
+}
+#registro .debil{
+    font-weight:bold;
+    color:orange;
+    font-size:larger;
+}
+#registro .buena{
+    font-weight:bold;
+    color:#2D98F3;
+    font-size:larger;
+}
+#registro .muy_buena{
+    font-weight:bold;
+    color: limegreen;
+    font-size:larger;
+}
+
+.panel, .flip
+{
+    padding:5px;
+    text-align:center;
+    color: white;
+    background-color:#0066ff;
+    border:solid 1px #bbb;
+}
+.panel
+{
+    padding:50px;
+    display:none;
+}
+
+.addmoney{
+    margin: 0 auto;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.addmoney input[type=text] {
+    width: 30%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-bottom: 10px;
+}
+.addmoney input[type=submit] {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    cursor: pointer;
+    border: none;
+    color: white;
+    background-color: #0066ff;
+}
+.imagenh{
+    margin: 0 auto;
+    border: 5px solid grey;
+    width: 50px;
+    height: 65px;
+  }
+
+.tituloh{
+    font-family: "Alfa Slab One";
+    font-size: 25px;
+    letter-spacing: 1px;
+    margin-left: 30px;
+}

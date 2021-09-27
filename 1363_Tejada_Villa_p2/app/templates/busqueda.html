@@ -1,0 +1,37 @@
+{% extends "base.html" %}
+
+{% block title %}
+    {{ title }}
+{% endblock%}
+
+{% block content %}
+    {% if not movie and not listap %}
+        <p>{{ error }}</p>
+    {% elif not movie %}
+    <div class="menu">
+        <div class="fila">
+            {% for item in listap %}
+                <form action="{{url_for('detalle') }}" method="post" novalidate>
+                    <div class="poster">
+                        <input name="id" type="hidden" value="{{item.id}}">
+                        <input class = "imagen" type = "image" src=  {{url_for('static', filename = item['poster']) }} alt= "{{item.titulo}}" title="{{item.titulo}}">
+                        <div class="titulopelicula">{{ item.titulo }}</div>
+                    </div>
+                </form>
+            {% endfor %}
+        </div>
+    </div>
+    {% else %}
+    <div class="menu">
+        <div class="fila">
+            <form action="{{url_for('detalle') }}" method="post" novalidate>
+                <div class="poster">
+                    <input name="id" type="hidden" value="{{movie.id}}">
+                    <input class = "imagen" type = "image" src=  {{url_for('static', filename = movie['poster']) }} alt= "{{movie.titulo}}" title="{{movie.titulo}}">
+                    <div class="titulopelicula">{{ movie.titulo }}</div>
+                </div>
+            </form>
+        </div>
+    </div>
+    {% endif%}
+{% endblock %}

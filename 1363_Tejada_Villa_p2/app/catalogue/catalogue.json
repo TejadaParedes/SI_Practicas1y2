@@ -1,0 +1,311 @@
+{ "peliculas": 
+  [ 
+    { 
+			"id": 1,
+			"titulo": "El Rey León",
+      "poster": "Imagenes/Rey_Leon.jpg",
+      "director": "Jon Favreau",
+      "precio": 18.99,
+      "duracion": 118,
+      "categoria": "Animación. Aventuras. Drama. Musical",
+      "año": 2019,
+      "sinopsis": "Tras el asesinato de su padre, un joven león abandona su reino para descubrir el auténtico significado de la responsabilidad y de la valentía. Remake de \"El Rey León\"."
+    },
+    { 
+			"id": 2,
+			"titulo": "Los Increibles 2",
+      "poster": "Imagenes/increibles2.jpg",
+      "director": "Brad Bird",
+      "precio": 14.99,
+      "duracion": 118,
+      "categoria": "Animación. Aventuras. Acción. Comedia",
+      "año": 2018,
+      "sinopsis": "Helen tiene que liderar una campaña para que los superhéroes regresen, mientras Bob vive su vida \"normal\" con Violet, Dash y el bebé Jack-Jack —cuyos superpoderes descubriremos—. Su misión se va a pique cuando aparece un nuevo villano con un brillante plan que lo amenaza todo. Pero los Parr no se amedrentarán y menos teniendo a Frozone de su parte."
+    },
+    { 
+			"id": 3,
+			"titulo": "American Pie",
+      "poster": "Imagenes/AmericanPie.jpg",
+      "director": "Paul Weitz, Chris Weitz",
+      "precio": 18.99,
+      "duracion": 118,
+      "categoria": "Comedia",
+      "año": 1999,
+      "sinopsis": "Una legión de jóvenes inexpertos viven obsesionados con el sexo opuesto. Jim, uno de ellos, está desesperado porque todavía es virgen. Además, desde que sus padres le sorprendieron viendo películas pornográficas, su situación en casa ha empeorado, porque su bienintencionado padre pretende ocuparse de su educación sexual; en el colegio, las cosas no van mucho mejor: su relación con una chica, gracias a un programa de intercambio, tiene toda la pinta de fracasar. Así que su último recurso se llama Michelle, una integrante de la banda de música que resulta ser todo un prodigio.",
+      "actores":
+      [
+        {
+          "nombre": "Jason Biggs",
+          "personaje": "Jim Levenstein",
+          "foto": "imagenes/anakin.jpg"
+        },
+        {
+          "nombre": "Chris Klein",
+          "personaje": "Chris Ostreicher",
+          "foto": "imagenes/anakin.jpg"
+        },
+        {
+          "nombre": "Thomas Ian Nicholas",
+          "personaje": "Kevin Myers",
+          "foto": "imagenes/anakin.jpg"
+        },
+        {
+          "nombre": "Alyson Hannigan",
+          "personaje": "Michelle Flaherty",
+          "foto": "imagenes/anakin.jpg"
+        },
+        {
+          "nombre": "Shannon Elizabeth",
+          "personaje": "Nadia",
+          "foto": "imagenes/anakin.jpg"
+        }
+      ]
+    },
+    { 
+			"id": 4,
+			"titulo": "Vengadores: Infinity War",
+      "poster": "Imagenes/VengadresInfinitiWar.jpg",
+      "director": "Anthony Russo, Joe Russo",
+      "precio": 18.99,
+      "duracion": 118,
+      "categoria": "Ciencia ficción. Fantástico. Acción",
+      "año": 2018,
+      "sinopsis": "El todopoderoso Thanos ha despertado con la promesa de arrasar con todo a su paso, portando el Guantelete del Infinito, que le confiere un poder incalculable. Los únicos capaces de pararle los pies son los Vengadores y el resto de superhéroes de la galaxia, que deberán estar dispuestos a sacrificarlo todo por un bien mayor. Capitán América e Ironman deberán limar sus diferencias, Black Panther apoyará con sus tropas desde Wakanda, Thor y los Guardianes de la Galaxia e incluso Spider-Man se unirán antes de que los planes de devastación y ruina pongan fin al universo. ¿Serán capaces de frenar el avance del titán del caos?",
+      "actores":
+      [
+        {
+          "nombre": "Robert Downey Jr.",
+          "personaje": "Iron Man",
+          "foto": "imagenes/anakin.jpg"
+        },
+        {
+          "nombre": "Chris Evans",
+          "personaje": "Capitan America",
+          "foto": "imagenes/anakin.jpg"
+        },
+        {
+          "nombre": "Mark Ruffalo",
+          "personaje": "Hulk",
+          "foto": "imagenes/anakin.jpg"
+        },
+        {
+          "nombre": "Chris Hemsworth",
+          "personaje": "Thor",
+          "foto": "imagenes/anakin.jpg"
+        },
+        {
+          "nombre": "Scarlett Johansson",
+          "personaje": "Viuda negra",
+          "foto": "imagenes/anakin.jpg"
+        }
+      ]
+    },
+    { 
+			"id": 5,
+			"titulo": "Titanic",
+      "poster": "Imagenes/Titanic.jpg",
+      "director": "James Cameron",
+      "precio": 18.99,
+      "duracion": 130,
+      "categoria": "Romance. Drama. Aventuras",
+      "año": 1997,
+      "sinopsis": "Jack (DiCaprio), un joven artista, gana en una partida de cartas un pasaje para viajar a América en el Titanic, el transatlántico más grande y seguro jamás construido. A bordo conoce a Rose (Kate Winslet), una joven de una buena familia venida a menos que va a contraer un matrimonio de conveniencia con Cal (Billy Zane), un millonario engreído a quien sólo interesa el prestigioso apellido de su prometida. Jack y Rose se enamoran, pero el prometido y la madre de ella ponen todo tipo de trabas a su relación. Mientras, el gigantesco y lujoso transatlántico se aproxima hacia un inmenso iceberg.",
+      "actores":
+      [
+        {
+          "nombre": "Leonardo DiCaprio",
+          "personaje": "Jack",
+          "foto": "imagenes/anakin.jpg"
+        },
+        {
+          "nombre": "Kate Winslet",
+          "personaje": "Rose",
+          "foto": "imagenes/anakin.jpg"
+        },
+        {
+          "nombre": "Billy Zane",
+          "personaje": "Cal",
+          "foto": "imagenes/anakin.jpg"
+        }
+      ]
+    },
+    { 
+			"id": 6,
+			"titulo": "Harry Potter y las reliquias de la muerte - Parte II",
+      "poster": "Imagenes/HarryPotterylasReliquiasdelamuerte2.jpg",
+      "director": "David Yates",
+      "precio": 18.99,
+      "duracion": 130,
+      "categoria": "Fantástico. Aventuras. Drama",
+      "año": 2011,
+      "sinopsis": "El final ha llegado. Harry, Hermione y Ron tendrán que recuperar la espada de Gryffindor para encontrar y destruir los últimos horrocruxes. Mientras tanto, Lord Voldemort está a punto de apoderarse por completo de Hogwarts y de conseguir su objetivo: matar a Harry Potter. La única esperanza de Harry es encontrar los horrocruxes antes de que Voldemort lo encuentre a él. Buscando pistas, descubre una antigua y olvidada historia: la leyenda de las reliquias de la muerte, que podría dar al malvado Lord el poder definitivo. Pero el futuro de Harry está escrito desde que nació e incluye una misión para la que se ha estado preparando desde que llegó a Hogwarts: la batalla final contra Voldemort.",
+      "actores":
+      [
+        {
+          "nombre": "Daniel Radcliffe",
+          "personaje": "Harry Potter",
+          "foto": "imagenes/anakin.jpg"
+        },
+        {
+          "nombre": "Emma Watson",
+          "personaje": "Hermione Granger",
+          "foto": "imagenes/anakin.jpg"
+        },
+        {
+          "nombre": "Rupert Grint",
+          "personaje": "Ron Weasley",
+          "foto": "imagenes/anakin.jpg"
+        },
+        {
+          "nombre": "Alan Rickman",
+          "personaje": "Severus Snape",
+          "foto": "imagenes/anakin.jpg"
+        },
+        {
+          "nombre": "Ralph Fiennes",
+          "personaje": "Voldemort",
+          "foto": "imagenes/anakin.jpg"
+        }
+      ]
+    },
+    { 
+			"id": 7,
+			"titulo": "Érase una vez en... Hollywood",
+      "poster": "Imagenes/eraseunavezenhollywood.jpg",
+      "director": "Quentin Tarantino",
+      "precio": 18.99,
+      "duracion": 165,
+      "categoria": "Thriller. Drama. Comedia",
+      "año": 2019,
+      "sinopsis": "Hollywood, años 60. La estrella de un western televisivo, Rick Dalton (DiCaprio), intenta amoldarse a los cambios del medio al mismo tiempo que su doble (Pitt). La vida de Dalton está ligada completamente a Hollywood, y es vecino de la joven y prometedora actriz y modelo Sharon Tate (Robbie) que acaba de casarse con el prestigioso director Roman Polanski.",
+      "actores":
+      [
+        {
+          "nombre": "Leonardo DiCaprio",
+          "personaje": "Rick Dalton",
+          "foto": "imagenes/anakin.jpg"
+        },
+        {
+          "nombre": "Brad Pitt",
+          "personaje": "Cliff Booth",
+          "foto": "imagenes/anakin.jpg"
+        },
+        {
+          "nombre": "Margot Robbie",
+          "personaje": "Sharon Tate",
+          "foto": "imagenes/anakin.jpg"
+        },
+        {
+          "nombre": "Emile Hirsch",
+          "personaje": "Jay Sebring",
+          "foto": "imagenes/anakin.jpg"
+        },
+        {
+          "nombre": "Margaret Qualley",
+          "personaje": "Pussycat",
+          "foto": "imagenes/anakin.jpg"
+        }
+      ]
+    },
+    { 
+			"id": 8,
+			"titulo": "Star Wars VIII: Los últimos Jedi",
+      "poster": "Imagenes/StarWarsVIII.jpg",
+      "director": "Rian Johnson",
+      "precio": 18.99,
+      "duracion": 150,
+      "categoria": "Ciencia ficción. Fantástico. Aventuras. Acción",
+      "año": 2017,
+      "sinopsis": "La malvada Primera Orden se ha vuelto más poderosa y tiene contra las cuerdas a la Resistencia, liderada por la General Leia Organa (Carrie Fisher). El piloto Poe Dameron (Oscar Isaac) encabeza una misión para intentar destruir un acorazado de la Primera Orden. Mientras tanto, la joven Rey (Daisy Ridley) tendrá que definir su futuro y su vocación, y el viejo jedi Luke Skywalker (Mark Hamill) revaluar el significado de su vida.",
+      "actores":
+      [
+        {
+          "nombre": "Daisy Ridley",
+          "personaje": "Rey",
+          "foto": "imagenes/anakin.jpg"
+        },
+        {
+          "nombre": "John Boyega",
+          "personaje": "Finn",
+          "foto": "imagenes/anakin.jpg"
+        },
+        {
+          "nombre": "Adam Driver",
+          "personaje": "Kylo Ren",
+          "foto": "imagenes/anakin.jpg"
+        },
+        {
+          "nombre": "Oscar Isaac",
+          "personaje": "Poe Dameron",
+          "foto": "imagenes/anakin.jpg"
+        },
+        {
+          "nombre": "Mark Hamill",
+          "personaje": "Luke Skywalker",
+          "foto": "imagenes/anakin.jpg"
+        }
+      ]
+    },
+    { 
+			"id": 9,
+			"titulo": "Spider-Man: Into the Spider-Verse",
+      "poster": "Imagenes/Spiderman.jpg",
+      "director": "Bob Persichetti, Peter Ramsey, Rodney Rothman",
+      "precio": 18.99,
+      "duracion": 117,
+      "categoria": "Animación. Aventuras. Acción. Fantástico",
+      "año": 2018,
+      "sinopsis": "En un universo paralelo donde Peter Parker ha muerto, un joven de secundaria llamado Miles Morales es el nuevo Spider-Man. Sin embargo, cuando el líder mafioso Wilson Fisk (a.k.a Kingpin) construye el Super Colisionador trae a una versión alternativa de Peter Parker que tratará de enseñarle a Miles como ser un mejor Spider-Man. Pero no será el único Spider Man en entrar a este universo, 4 versiones alternas de Spidey aparecerán y buscarán regresar a su universo antes de que toda la realidad colapse."
+    },
+    { 
+			"id": 10,
+			"titulo": "Pokémon: Detective Pikachu",
+      "poster": "Imagenes/Pikachu.jpg",
+      "director": "Rob Letterman",
+      "precio": 18.99,
+      "duracion": 104,
+      "categoria": "Fantástico. Aventuras. Comedia",
+      "año": 2018,
+      "sinopsis": "Cuando el gran detective privado Harry Goodman desaparece misteriosamente; Tim, su hijo de 21 años, debe averiguar qué sucedió. En la investigación lo ayuda el antiguo compañero Pokémon de Harry, el Detective Pikachu: un super detective adorable y ocurrente que se asombra incluso a sí mismo. Tim y Pikachu se dan cuenta que increíblemente pueden comunicarse, y unen fuerzas en una aventura para develar el misterio enmarañado. Mientras buscan pistas en las calles resplandecientes de Ryme City, una vasta metrópolis moderna donde los humanos y los Pokémon comparten un mundo real hiperrealista, encuentran distintos personajes Pokémon y descubren un complot impactante que podría destruir la convivencia pacífica y amenazar a todo el universo Pokémon."
+    },
+    { 
+			"id": 11,
+			"titulo": "La Monja",
+      "poster": "Imagenes/Lamonja.jpg",
+      "director": "Corin Hardy",
+      "precio": 18.99,
+      "duracion": 96,
+      "categoria": "Terror",
+      "año": 2019,
+      "sinopsis": "Cuando una joven monja se suicida en una abadía de clausura en Rumanía, un sacerdote experto en posesiones demoniacas y una novicia a punto de tomar sus votos, son enviados por el Vaticano para investigar. Juntos descubren el profano secreto de la orden. Arriesgando no solo sus propias vidas sino su fe y hasta sus almas, se enfrentan a una fuerza maléfica en forma de monja demoníaca, en una abadía que se convierte en un campo de batalla de horror entre los vivos y los condenados.",
+      "actores":
+      [
+        {
+          "nombre": "Taissa Farmiga",
+          "personaje": "Hermana Irene",
+          "foto": "imagenes/anakin.jpg"
+        },
+        {
+          "nombre": "Demian Bichir",
+          "personaje": "Padre Burke",
+          "foto": "imagenes/anakin.jpg"
+        },
+        {
+          "nombre": "Jonas Bloquet",
+          "personaje": "Frenchie",
+          "foto": "imagenes/anakin.jpg"
+        },
+        {
+          "nombre": "Bonnie Aarons",
+          "personaje": "Valak",
+          "foto": "imagenes/anakin.jpg"
+        },
+        {
+          "nombre": "Charlotte Hope",
+          "personaje": "Hermana Victoria",
+          "foto": "imagenes/anakin.jpg"
+        }
+      ]
+    }
+  ]
+}

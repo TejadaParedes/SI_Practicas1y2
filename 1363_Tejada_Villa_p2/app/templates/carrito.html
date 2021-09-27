@@ -1,0 +1,66 @@
+{% extends "base.html" %}
+
+{% block title %}
+    {{ title }}
+{% endblock%}
+
+{% block content %}
+    <div class="menu">
+    <div class="titulocarrito"><h1>Carrito</h1></div>
+    {% if not items %}
+        <h2 class="carritovacio">Todavía no has añadido nada</h2>
+    {% else %}
+
+            <div class="tabla">
+                    <table>
+                        <tr>
+                            <th>Pelicula</th>
+                            <th>Titulo</th>
+                            <th>Precio</th>
+                            <th>Eliminar</th>
+                        </tr>
+                        {% for item in items%}
+                            <tr>
+                                <td>
+                                    <form action="{{url_for('detalle') }}" method="post" novalidate>
+                                        <div class="poster">
+                                            <input name="id" type="hidden" value="{{item.id}}">
+                                            <input class = "imagenh" type = "image" src=  {{url_for('static', filename = item['poster']) }} alt= "{{item.titulo}}" title="{{item.titulo}}">
+                                        </div>
+                                    </form>
+                                </td>
+                                <td>{{ item.titulo }}</td>
+                                <td>{{ item.precio }}</td>
+                                <td>
+                                    <form action="{{url_for('delitem') }}" method="post" novalidate>
+                                        <div class="delitem">
+                                            <input name="index" type="hidden" value="{{loop.index}}">
+                                            <input class = "imagendel" type = "image" src=  {{url_for('static', filename = 'Imagenes/delete.png') }} alt= "{{item.titulo}}" title="{{item.titulo}}">
+                                        </div>
+                                    </form> 
+                                </td>
+                            </tr>
+                        {% endfor %}
+                    </table>
+                </div>
+                <div class="pietabla">
+                    <div class="totalcarrito">Total: {{ total }}€ </div> 
+                    <form action="{{url_for('fincompra')}}" method="POST" onsubmit="return confirmPurchase();">
+                        <div class = "boton"> <input type="submit" value="Comprar"> </div>
+                        <input type="hidden" value="{{ total }}" name="total">
+                    </form>     
+    {% endif %}
+    </div>
+    </div> 
+    {% if succeed %}
+        <script>
+        alert("Su compra se ha realizado satisfactoriamente.")
+        </script>
+    {% endif %}
+    {% if failed %}
+        <script>
+        alert("Su cuenta no tiene fondos suficientes para completar la compra")
+        </script>
+    
+    {% endif %}
+{% endblock %}

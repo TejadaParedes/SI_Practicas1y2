@@ -1,0 +1,48 @@
+{% extends "base.html" %}
+
+{% block title %}
+    {{ title }}
+{% endblock%}
+
+{% block content %}
+    <div class="menu">
+    <div class="tituloh">Historial</div>
+    {% if not items %}
+        <h2 class="historialvacio">Todavía no has comprado nada.</h2>
+    {% else %}
+
+            <div class="tabla">
+                    <table>
+                        <tr>
+                            <th>Pelicula</th>
+                            <th>Titulo</th>
+                            <th>Precio</th>
+                            <th>Detalles</th>
+                        </tr>
+                        {% for item in items %}
+                            <tr>
+                                <td>
+                                    <div class="poster">
+                                        <input class = "imagenh" type = "image" src=  {{url_for('static', filename = item['poster']) }} alt= "{{item.titulo}}" title="{{item.titulo}}">
+                                    </div>
+                                </td>
+                                <td>{{ item.titulo }}</td>
+                                <td>{{ item.precio }}€</td>
+                                <td><h6 class = "flip">Click para + detalles<h6><div class = "panel">Fecha: {{ item.fecha }} <br> Hora: {{ item.hora }}</div></td>
+                            </tr>
+                        {% endfor %}
+                    </table>
+                </div>
+    {% endif %}
+    <div class="piehistorial">
+        <div class="balance">Dinero en cuenta: {{ balance }}€ </div>
+        <form action="{{url_for('addmoney')}}" method="post" onsubmit="return verifyMoney();">
+            <div class="addmoney">
+                <input type="text" placeholder="Cantidad" name="cantidad" id="cantidad">
+                <input type="submit" class="boton" value="Agregar fondos">
+            </div>
+        </form>   
+    </div>
+    </div>
+    </div> 
+{% endblock %}
